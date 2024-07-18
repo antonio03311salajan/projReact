@@ -1,0 +1,73 @@
+.button{
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    font-size: 2rem;
+    border:none;
+    outline:none;
+    cursor:pointer;
+}
+
+.button__TopLeft{
+    background-color: red;
+    top :0;
+    left: 0;
+}
+
+.button__TopRight{
+    background-color: green;
+    top :0;
+    right:0;
+}
+
+.button__BottomLeft{
+    background-color: blue;
+    bottom :0;
+    left: 0;
+}
+
+.button__BottomRight{
+    background-color: yellowgreen;
+    bottom :0;
+    right: 0;
+}
+
+.button__moveLeft{
+    transition: left 1s;
+    left: 0;
+}
+
+.button__moveRight{
+    transition: left 1s;
+    left: calc(100vw - 20rem);
+}
+
+.button__moveTopDownGreen{
+    transition: top 1s, right 1s;
+    top: calc(100vh - 20rem);
+    right: calc(100vw - 20rem);
+}
+
+.button__moveBottomUpGreen{
+    transition: top 1s, right 1s;
+    top:0;
+    right:0;
+}
+
+.button__moveUp{
+    transition: bottom 1s, right 1s;
+    bottom: calc(100vh - 20rem);
+}
+
+.button__moveTopLeft{
+    transition: top 1s, left 1s;
+    top: 0;
+    left: 0;
+}
+
+.button__moveDown{
+    transition: top 1s, left 1s;
+    top: calc(100vh - 20rem);
+    left:0;
+}
+
